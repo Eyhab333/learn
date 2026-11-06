@@ -1,8 +1,8 @@
 // app/login/page.tsx
 "use client";
 
-import { useState } from "react";
-import { loginWithGoogle, loginWithEmail, signupWithEmail } from "@/lib/auth";
+// import { useState } from "react";
+import { loginWithGoogle } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -11,12 +11,12 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Separator } from "@/components/ui/separator";
+// import { Input } from "@/components/ui/input";
+// import { Separator } from "@/components/ui/separator";
 
 export default function LoginPage() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
 
   return (
     <main className="min-h-[70vh] flex items-center justify-center p-4">
@@ -33,7 +33,7 @@ export default function LoginPage() {
             دخول عبر Google
           </Button>
 
-          <Separator />
+          {/* <Separator />
 
           <div className="space-y-2">
             <Input
@@ -49,9 +49,9 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
               autoComplete="current-password"
             />
-          </div>
+          </div> */}
 
-          <div className="grid gap-2">
+          {/* <div className="grid gap-2">
             <Button onClick={() => loginWithEmail(email, password)}>
               دخول بالبريد
             </Button>
@@ -61,7 +61,7 @@ export default function LoginPage() {
             >
               إنشاء حساب
             </Button>
-          </div>
+          </div> */}
         </CardContent>
       </Card>
     </main>
